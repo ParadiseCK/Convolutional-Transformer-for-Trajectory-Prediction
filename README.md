@@ -10,10 +10,12 @@ NVIDIA GTX 1080Ti
 # Prepare img depth 
 cd getDepth  
 python run_mot.py  
-python getDepth.py  
+python getDepth.py
+You can refer to [mannequinchallenge](https://github.com/google/mannequinchallenge)  
 # Prepare pose data
 cd getPoseData  
-python getPose.py  
+python getPose.py
+You can refer to [poseDetection](https://github.com/Hzzone/pytorch-openpose)    
 # Combining the img depth,  the pedestrian pose and the xy-coordinates to construct the multi-channel tensor
 cd getTranAndTestData  
 python generateNewGt.py  
